@@ -130,6 +130,14 @@ h1 {
     border-radius: 5px;
 }
 
+.ioan-link {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: lightgray;
+    text-decoration: none;
+}
+
 .tooltip {
     position: absolute;
     top: 70%;
