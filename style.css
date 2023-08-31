@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#quote-generator {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border: 2px solid #555;
+    max-width: 600px;
+}
+
+h1 {
+    color: #bdbdbd;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+#quote-display {
+    margin-top: 10px;
+    color: #ccc;
+    font-size: 15px;
+    background-color: #444;
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;
+    user-select: none;
+}
+
+#quote-display:hover {
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+}
+
+#quote-author {
+    font-size: 14px;
+    color: #999;
+}
+
+.buttons-container {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    gap: 10px;
+}
+
+#generate-button,
+#auto-button,
+#copy-text-button {
+    padding: 10px 15px;
+    outline: none;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#generate-button {
+    background-color: #266afc;
+    color: #fff;
+}
+
+#generate-button:hover {
+    background-color: #1b52c9;
+}
+
+#auto-button {
+    background-color: #1d1b1b;
+    color: #9e9696;
+}
+
+#auto-button:hover {
+    background-color: #161515;
+    color: #9e9696;
+}
+
+#auto-button i {
+    margin-right: 5px;
+}
+
+#copy-text-button {
+    background-color: #1d1b1b;
+    color: #9e9696;
+}
+
+#copy-text-button:hover {
+    background-color: #161515;
+    color: #9e9696;
+}
+
+.tooltip {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quotify</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7683898749.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="quote-generator">
+        <h1>Quotify</h1>
+        <p id="quote-author" data-author="author1">Author Name</p>
+        <div id="quote-display"></div>
+        <div class="buttons-container">
+            <button id="generate-button" onclick="generateQuote()">
+                <i class="fa-regular fa-lightbulb"></i>
+                Generate Quote
+            </button>
+            <button id="auto-button">
+                <i class="fas fa-arrows-rotate rotating-arrow"></i>
+                Auto Generate
+            </button>            
+            <button id="copy-text-button"><i class="fa-regular fa-clipboard"></i></button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
