@@ -2,6 +2,7 @@
 
 /* Base styles for larger screens */
 body {
+    overflow-x: hidden;
     background-color: #222;
     color: #fff;
     display: flex;
@@ -83,13 +84,13 @@ h1 {
 }
 
 #auto-button {
-    background-color: #1d1b1b;
-    color: #9e9696;
+    background-color: #ae21ca;
+    color: #fff;
 }
 
 #auto-button:hover {
-    background-color: #161515;
-    color: #9e9696;
+    background-color: #8d1ca3;
+    color: #fff;
 }
 
 #auto-button i {
@@ -102,8 +103,31 @@ h1 {
 }
 
 #copy-text-button:hover {
-    background-color: #161515;
+    background-color: #121111;
     color: #9e9696;
+}
+
+.tags-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.tags-container::-webkit-scrollbar {
+    display: none;
+}
+
+.tag-text {
+    display: inline-block;
+    background-color: #1d1c1c;
+    color: #9e9696;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 14px;
+    border-radius: 5px;
 }
 
 .tooltip {
