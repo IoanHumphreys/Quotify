@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+/* Base styles for larger screens */
 body {
     background-color: #222;
     color: #fff;
@@ -11,6 +12,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Container for the quote generator */
 #quote-generator {
     background-color: #333;
     border-radius: 10px;
@@ -21,12 +23,14 @@ body {
     max-width: 600px;
 }
 
+/* Heading styles */
 h1 {
     color: #bdbdbd;
     font-size: 23px;
     font-weight: 600;
 }
 
+/* Quote display styles */
 #quote-display {
     margin-top: 10px;
     color: #ccc;
@@ -49,6 +53,7 @@ h1 {
     color: #999;
 }
 
+/* Buttons container */
 .buttons-container {
     display: flex;
     margin-top: 15px;
@@ -56,6 +61,7 @@ h1 {
     gap: 10px;
 }
 
+/* Button styles */
 #generate-button,
 #auto-button,
 #copy-text-button {
@@ -112,3 +118,10 @@ h1 {
     font-size: 14px;
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    #quote-generator {
+        padding: 40px 30px; /* Increase padding for larger UI on mobile */
+        font-size: 18px;   /* Increase font size for larger UI on mobile */
+    }
+}
