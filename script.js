@@ -47,9 +47,11 @@ autoButton.addEventListener("click", () => {
 });
 
 function copyToClipboard() {
-  const quoteText = document.getElementById("quote-display").innerText;
+  const quoteText = document.getElementById("quote-display").textContent;
+  const authorText = document.getElementById("quote-author").textContent;
+  const fullText = `${quoteText} - ${authorText}`; // Concatenate quote and author
 
-  navigator.clipboard.writeText(quoteText).then(() => {
+  navigator.clipboard.writeText(fullText).then(() => {
     const tooltip = document.createElement("div");
     tooltip.classList.add("tooltip");
     tooltip.innerText = "Copied to clipboard";
@@ -61,5 +63,7 @@ function copyToClipboard() {
     }, 3000);
   });
 }
+
+
 
 window.addEventListener('load', generateQuote);
