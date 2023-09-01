@@ -123,6 +123,14 @@ function copyToClipboard() {
   });
 }
 
+// Function to handle spacebar keypress
+function handleSpacebarKeyPress(event) {
+  if (event.key === ' ' || event.key === 'Spacebar') {
+    generateQuote(); // Call the generateQuote function when spacebar is pressed
+  }
+}
 
+// Add an event listener to the document to listen for keypress events
+document.addEventListener('keydown', handleSpacebarKeyPress);
 
 window.addEventListener('load', generateQuote);
